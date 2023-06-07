@@ -1,0 +1,18 @@
+<div class="Header">
+    <div class="Logo">
+        <h1>P.B. Hotels</h1>
+    </div>
+    <div class="Menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Habitaciones</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="Botones" *ngIf="!auth.isLoggedIn">
+        <button class="Iniciar" routerLink="/login">Iniciar Sesión</button>
+        <button class="Registrarse">Registrarse</button>
+    </div>
+    <h2 *ngIf="auth.isLoggedIn">Hola, {{ auth.username }}</h2>
+</div> 
