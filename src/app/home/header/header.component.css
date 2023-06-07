@@ -1,0 +1,75 @@
+.Header{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 234, 210, 0.15);
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.Header h2{
+    color: #ffffff;
+    font-family: 'Newsreader', serif;
+}
+
+.Logo h1{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.Menu a{
+    font-family: 'Newsreader', serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Botones button{
+    font-family: 'Newsreader', serif;
+    
+    font-size: 15px;
+    padding: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.Iniciar{
+    background-color: #8294C4;
+    color: #ffffff;
+    border: 1px solid #8294C4;
+    cursor: pointer;
+}
+
+.Iniciar:hover{
+    background-color: #7385ba;
+    color: #ffffff;
+    border: 1px solid #8294C4;
+}
+
+.Registrarse{
+    background-color: #DBDFEA;
+    color: #181818;
+    border: 1px solid #DBDFEA;
+    cursor: pointer;
+}
+
+.Registrarse:hover{
+    background-color: #c6c8ce;
+    color: #181818;
+    border: 1px solid #DBDFEA;
+}
