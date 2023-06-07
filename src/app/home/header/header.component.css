@@ -18,6 +18,7 @@
     font-family: 'Herr Von Muellerhoff', cursive;
     font-size: 50px;
     color: #ffffff;
+    margin-bottom: 0%;
 }
 
 .Menu ul{
@@ -72,4 +73,26 @@
     background-color: #c6c8ce;
     color: #181818;
     border: 1px solid #DBDFEA;
+}
+
+.UserLog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.UserLog h2{
+    margin-bottom: 0%;
+    margin-right: 15px;
+}
+
+.UserLog button{
+    font-family: 'Newsreader', serif;
+    font-size: 15px;
+    padding: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #ffa0a0;
 }

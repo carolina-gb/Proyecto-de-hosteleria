@@ -14,5 +14,8 @@
         <button class="Iniciar" routerLink="/login">Iniciar Sesión</button>
         <button class="Registrarse">Registrarse</button>
     </div>
-    <h2 *ngIf="auth.isLoggedIn">Hola, {{ auth.username }}</h2>
+    <div *ngIf="auth.isLoggedIn" class="UserLog">
+        <h2>Hola, {{ auth.username }}</h2>
+        <button (click)="Logout()" class="Logout">Cerrar Sesión</button>
+    </div>
 </div> 
