@@ -8,6 +8,12 @@ import { HeroComponent } from './home/hero/hero.component';
 import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { RoomsComponent } from './admin/rooms/rooms.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon';
+import { EditRoomsComponent } from './admin/edit-rooms/edit-rooms.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -15,13 +21,18 @@ import { LoginComponent } from './login/login.component';
     HeroComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    RoomsComponent,
+    EditRoomsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
+    MatIconModule,
+    MatFormFieldModule
 
   ],
   providers: [],

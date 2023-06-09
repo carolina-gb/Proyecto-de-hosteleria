@@ -1,0 +1,23 @@
+<h1>editar</h1>
+<div>
+    <form  #createForm="ngForm" (ngSubmit)="modificar()">
+      <mat-form-field>
+        <input matInput placeholder="Nombre"  name="name" [(ngModel)]="nombre" required />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Posición" name="position" type="number" [(ngModel)]="posicion" required />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Piso" name="piso" type="number" [(ngModel)]="piso" required />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Costo" name="costo" type="number" [(ngModel)]="costo" required />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Tipo" name="tipo" [(ngModel)]="tipo" required />
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit"  [disabled]="createForm.invalid">Modificar</button>
+      <button mat-raised-button color="primary" (click)="agregar()" [disabled]="createForm.invalid">crear</button>
+    </form>
+  </div>
