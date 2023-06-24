@@ -1,21 +1,21 @@
 <div class="Header">
-    <div class="Logo">
-        <h1>P.B. Hotels</h1>
-    </div>
-    <div class="Menu">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Habitaciones</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </div>
-    <div class="Botones" *ngIf="!auth.isLoggedIn">
-        <button class="Iniciar" routerLink="/login">Iniciar Sesión</button>
-        <button class="Registrarse">Registrarse</button>
-    </div>
-    <div *ngIf="auth.isLoggedIn" class="UserLog">
-        <h2>Hola, {{ auth.username }}</h2>
-        <button (click)="Logout()" class="Logout">Cerrar Sesión</button>
-    </div>
-</div> 
+  <div class="Logo">
+    <h1>P.B. Hotels</h1>
+  </div>
+  <div class="Menu">
+    <ul>
+      <li><a routerLink="/home">Inicio</a></li>
+      <li><a routerLink="/habitaciones">Habitaciones</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contactos</a></li>
+    </ul>
+  </div>
+  <div class="Botones" *ngIf="!auth.isLoggedIn">
+    <button class="Iniciar" routerLink="/login">Iniciar Sesión</button>
+    <button class="Registrarse">Registrarse</button>
+  </div>
+  <div *ngIf="auth.isLoggedIn" class="UserLog">
+    <h2>Hola, {{ auth.username }}</h2>
+    <button (click)="Logout()" class="Logout">Cerrar Sesión</button>
+  </div>
+</div>

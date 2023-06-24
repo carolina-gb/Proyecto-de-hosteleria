@@ -5,23 +5,22 @@ import { AuthLoginService } from '../Auth/auth-login.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  username:string = "";
-  password:string = "";
-  alert=false;
+  username: string = '';
+  password: string = '';
+  alert = false;
 
-  constructor(private router: Router,private auth:AuthLoginService) {}
+  constructor(private router: Router, private auth: AuthLoginService) {}
 
-  onSubmit(){
-    if(this.username == 'admin' && this.password == 'admin'){
-      this.alert=false;
+  onSubmit() {
+    if (this.username == 'admin' && this.password == 'admin') {
+      this.alert = false;
       this.auth.login();
       this.router.navigate(['/']);
-    }
-    else{
-      this.alert=true;
+    } else {
+      this.alert = true;
     }
   }
 }

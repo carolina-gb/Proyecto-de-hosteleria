@@ -13,6 +13,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import { EditRoomsComponent } from './admin/edit-rooms/edit-rooms.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { HomeComponent } from './home/home/home.component';
+import { ListRoomsComponent } from './rooms/list-rooms/list-rooms.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FooterComponent,
     LoginComponent,
     RoomsComponent,
-    EditRoomsComponent
+    EditRoomsComponent,
+    HomeComponent,
+    ListRoomsComponent
   ],
   imports: [
     BrowserModule,
