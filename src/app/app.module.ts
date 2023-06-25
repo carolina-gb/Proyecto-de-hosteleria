@@ -15,6 +15,8 @@ import { EditRoomsComponent } from './admin/edit-rooms/edit-rooms.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { HomeComponent } from './home/home/home.component';
 import { ListRoomsComponent } from './rooms/list-rooms/list-rooms.component';
+import { ListServComponent } from './hotelServ/list-serv/list-serv.component';
+import { ContactosComponent } from './contactos/contactos.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ListRoomsComponent } from './rooms/list-rooms/list-rooms.component';
     RoomsComponent,
     EditRoomsComponent,
     HomeComponent,
-    ListRoomsComponent
+    ListRoomsComponent,
+    ListServComponent,
+    ContactosComponent
   ],
   imports: [
     BrowserModule,
